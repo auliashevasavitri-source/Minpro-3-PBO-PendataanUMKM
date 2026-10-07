@@ -1,6 +1,6 @@
 package model;
 
-public class JenisUsaha {
+public abstract class JenisUsaha {
 
     private String namaJenis;
 
@@ -15,4 +15,5 @@ public class JenisUsaha {
     public void setNamaJenis(String namaJenis) {
         this.namaJenis = namaJenis;
     }
+    public abstract String getKategori();
 }

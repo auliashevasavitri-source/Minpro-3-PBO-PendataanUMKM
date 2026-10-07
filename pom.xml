@@ -10,4 +10,5 @@
         <maven.compiler.release>26</maven.compiler.release>
         <exec.mainClass>com.mycompany.pendataan_umkm.Pendataan_UMKM</exec.mainClass>
     </properties>
+    <name>Minpro-3-PBO-PendataanUMKM</name>
 </project>

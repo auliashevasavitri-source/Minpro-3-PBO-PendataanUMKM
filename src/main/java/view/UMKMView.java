@@ -3,6 +3,7 @@ package view;
 import controller.UMKMController;
 import java.util.Scanner;
 import model.Event;
+import model.InfoUMKM;
 import model.JenisFashion;
 import model.JenisKuliner;
 import model.JenisUsaha;
@@ -107,11 +108,34 @@ public class UMKMView {
             return;
         }
 
-        for (UMKM umkm : controller.getDaftarUMKM()) {
+        System.out.println("1. Tampilkan Data Lengkap");
+        System.out.println("2. Tampilkan Data Singkat");
 
-            System.out.println("----------------------------------");
+        int pilihan = inputInteger("Pilih tampilan: ");
 
-            umkm.tampilkanInfo();
+        if (pilihan == 1) {
+
+            for (UMKM umkm : controller.getDaftarUMKM()) {
+
+                System.out.println("----------------------------------");
+
+                InfoUMKM info = (InfoUMKM) umkm;
+                info.tampilkanInfo();
+            }
+             
+
+        } else if (pilihan == 2) {
+
+            for (UMKM umkm : controller.getDaftarUMKM()) {
+
+                System.out.println("----------------------------------");
+
+                umkm.tampilkanInfo(false);
+            }
+
+        } else {
+
+            System.out.println("Pilihan tidak tersedia.");
         }
     }
 
