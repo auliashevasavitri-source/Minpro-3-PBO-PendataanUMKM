@@ -395,38 +395,52 @@ Penerapan interface juga membuat penggunaan method lebih terstruktur karena `UMK
 
 **Interface `InfoUMKM.java`:**
 
-![Interface Info UMKM](dokumentasi/info-umkm.png)
+<img width="238" height="95" alt="image" src="https://github.com/user-attachments/assets/c8ddd37e-2b5f-4bc9-85a0-94ecbfed37ee" />
+
 
 **Class `UMKM.java` menggunakan interface:**
 
-![UMKM Implements InfoUMKM](dokumentasi/umkm-interface.png)
+<img width="317" height="122" alt="image" src="https://github.com/user-attachments/assets/537db5ea-25da-45d5-ba16-3501b5de6298" />
+
 
 **Method `tampilkanInfo()` menggunakan `@Override`:**
 
-![Override Interface](dokumentasi/override-interface.png)
+<img width="337" height="98" alt="image" src="https://github.com/user-attachments/assets/ef16269b-b169-4beb-801e-e1703300c32a" />
+
 
 **Penggunaan interface pada `UMKMView.java`:**
 
-![Penggunaan Interface](dokumentasi/penggunaan-interface.png)
+<img width="320" height="197" alt="image" src="https://github.com/user-attachments/assets/9f4f5abc-5a0e-45f7-9277-31ec90cbb0b4" />
+
 
 
 ## 1. Model
 
-Package `model` berisi class yang berhubungan dengan data program.
+Package `model` berisi class yang berhubungan dengan data dan konsep utama dalam program.
 
 Class yang terdapat dalam package `model` yaitu:
 
-<img width="373" height="110" alt="image" src="https://github.com/user-attachments/assets/02e4b6fd-9f32-490f-847c-1e444096a39b" />
+<img width="194" height="65" alt="image" src="https://github.com/user-attachments/assets/b906aefe-1d71-4cad-95e0-4004a66580b2" />
 
-Contohnya, `UMKM.java` digunakan untuk menyimpan data seperti ID UMKM, nama usaha, nama pemilik, jenis usaha, dan event.
+
+Class yang terdapat dalam package `model` yaitu:
+
+- `UMKM.java` digunakan untuk menyimpan data UMKM seperti ID UMKM, nama usaha, nama pemilik, jenis usaha, dan event.
+- `Event.java` digunakan untuk menyimpan data event seperti ID event, nama event, dan lokasi.
+- `JenisUsaha.java` digunakan sebagai abstract class untuk jenis usaha.
+- `JenisKuliner.java` merupakan subclass dari `JenisUsaha` untuk jenis usaha kuliner.
+- `JenisFashion.java` merupakan subclass dari `JenisUsaha` untuk jenis usaha fashion.
+- `InfoUMKM.java` merupakan interface yang menentukan method `tampilkanInfo()` yang digunakan untuk menampilkan informasi UMKM.
 
 ### Alasan Menggunakan Model
 
-Model digunakan agar bagian yang menyimpan data dipisahkan dari tampilan dan proses program.
+Model digunakan agar bagian yang menyimpan data dan konsep utama program dipisahkan dari tampilan dan proses program.
 
 Dengan pemisahan ini, class seperti `UMKM` dapat fokus pada data yang dimiliki oleh object UMKM tanpa harus mengatur menu atau input pengguna.
 
-Hal ini membuat kode lebih mudah dibaca dan memudahkan jika data UMKM nantinya ingin dikembangkan.
+Pada Mini Project 3, package `model` juga digunakan untuk menerapkan konsep **inheritance, abstraction, polymorphism, dan interface**.
+
+Hal ini membuat kode lebih terstruktur dan memudahkan jika data atau jenis usaha UMKM nantinya ingin dikembangkan.
 
 ## 2. View
 
@@ -504,18 +518,17 @@ MVC digunakan agar kode program lebih terstruktur, lebih mudah dibaca, dan lebih
 
 <img width="506" height="241" alt="image" src="https://github.com/user-attachments/assets/1e3b3cfe-c073-4ff7-8d46-aab6c83594d8" />
 
-## 3. Tampilkan Data UMKM
+
 ## 3. Tampilkan Data UMKM
 
 ### Data Lengkap
 
-Screenshot hasil ketika pengguna memilih `1. Tampilkan Data Lengkap`.
+<img width="380" height="318" alt="image" src="https://github.com/user-attachments/assets/31f234bd-10fd-4486-a7cc-76dad99564b5" />
 
 ### Data Singkat
 
-Screenshot hasil ketika pengguna memilih `2. Tampilkan Data Singkat`.
+<img width="311" height="259" alt="image" src="https://github.com/user-attachments/assets/06f81a86-3324-4020-9073-8f9c479168da" />
 
-<img width="380" height="318" alt="image" src="https://github.com/user-attachments/assets/31f234bd-10fd-4486-a7cc-76dad99564b5" />
 
 
 ## 4. Ubah Data UMKM
