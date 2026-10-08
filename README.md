@@ -8,7 +8,7 @@ AULIA SHEVA SAVITRI | 2509116001
 
 Program dapat digunakan untuk menambah, menampilkan, mengubah, dan menghapus data UMKM. Data yang disimpan terdiri dari ID UMKM, nama usaha, nama pemilik, jenis usaha, dan event yang diikuti.
 
-Pada Mini Project 2 ini, program dikembangkan dengan menerapkan **access modifier, encapsulation, inheritance, input validation, dan dummy data**. Sebagai nilai tambah, program juga menerapkan **MVC (Model View Controller)** agar bagian data, tampilan, dan pengolahan data lebih terstruktur.
+Pada Mini Project 3 ini, program dikembangkan dari Mini Project 2 dengan menambahkan konsep polymorphism, abstraction, dan interface. Konsep sebelumnya seperti access modifier, encapsulation, inheritance, input validation, dummy data, dan MVC tetap digunakan dalam program.
 
 ---
 
@@ -23,6 +23,10 @@ Program memiliki beberapa fitur utama:
 5. Validasi input pengguna
 6. Pemilihan jenis usaha Kuliner dan Fashion
 7. Dummy data sebagai data awal
+8. Menampilkan data UMKM secara lengkap dan singkat
+9. Penerapan polymorphism melalui overloading dan overriding
+10. Penerapan abstraction pada jenis usaha
+11. Penerapan interface untuk menampilkan informasi UMKM
 
 ---
 
@@ -40,7 +44,12 @@ Cara kerja setiap menu dalam program adalah sebagai berikut:
    Pengguna memasukkan ID, nama usaha, nama pemilik, dan jenis usaha. Program melakukan validasi pada input yang dimasukkan. Jika ID sudah digunakan atau input tidak sesuai, program akan memberikan pesan dan meminta input kembali. Jika semua data sesuai, data UMKM akan dibuat dan disimpan ke dalam `ArrayList`.
 
 2. **Tampilkan Data UMKM**  
-   Program mengambil seluruh data UMKM yang tersimpan di dalam `ArrayList`, kemudian menampilkan ID, nama usaha, nama pemilik, jenis usaha, event, dan lokasi.
+   Pengguna dapat memilih jenis tampilan data yang ingin ditampilkan.
+
+   - **Data Lengkap** digunakan untuk menampilkan ID UMKM, nama usaha, nama pemilik, jenis usaha, kategori, event, dan lokasi.
+   - **Data Singkat** digunakan untuk menampilkan ID UMKM, nama usaha, nama pemilik, dan jenis usaha.
+
+   Pemilihan tampilan ini menggunakan method `tampilkanInfo()` dan `tampilkanInfo(boolean)` pada class `UMKM`.
 
 3. **Ubah Data UMKM**  
    Pengguna memasukkan ID UMKM yang ingin diubah. Program mencari data berdasarkan ID tersebut. Jika data ditemukan, pengguna dapat memasukkan nama usaha, nama pemilik, dan jenis usaha yang baru. Data tersebut kemudian diperbarui menggunakan setter.
@@ -51,7 +60,7 @@ Cara kerja setiap menu dalam program adalah sebagai berikut:
 5. **Keluar**  
    Jika pengguna memilih menu keluar, program akan menghentikan menu dan menampilkan pesan bahwa program telah selesai.
 
-Selama program berjalan, validasi input digunakan untuk mencegah kesalahan seperti memasukkan huruf pada input angka, memasukkan angka kurang dari atau sama dengan 0, atau membiarkan input teks kosong.
+Selama program berjalan, validasi input digunakan untuk mencegah kesalahan seperti memasukkan huruf pada input angka, memasukkan angka kurang dari atau sama dengan 0, atau membiarkan input teks kosong. Selain itu, program menggunakan polymorphism untuk menampilkan data UMKM dengan bentuk yang berbeda melalui overloading. Polymorphism juga digunakan melalui overriding untuk menentukan kategori pada masing-masing jenis usaha.
 
 ### Screenshot Alur Program
 
@@ -62,7 +71,7 @@ Selama program berjalan, validasi input digunakan untuk mencegah kesalahan seper
 Program dibagi menjadi beberapa package agar setiap bagian memiliki tugas yang berbeda.
 Package yang digunakan terdiri dari:
 
-- `model` digunakan untuk class yang berhubungan dengan data.
+- `model` digunakan untuk class yang berhubungan dengan data. `InfoUMKM.java` digunakan sebagai interface yang menentukan method `tampilkanInfo()` untuk class yang menerapkannya.
 - `controller` digunakan untuk mengelola data UMKM.
 - `view` digunakan untuk tampilan dan input pengguna.
 - `com.mycompany.pendataan_umkm` berisi class utama untuk menjalankan program.
@@ -140,7 +149,157 @@ Dengan cara ini, hubungan antar-class menjadi lebih jelas. Selain itu, penerapan
 
 Inheritance tidak diterapkan pada class `UMKM` karena Kuliner dan Fashion lebih sesuai menjadi turunan dari `JenisUsaha`, bukan turunan dari UMKM.
 
-## 4. Input Validation
+
+## 4. Polymorphism
+
+Polymorphism diterapkan pada program melalui **overloading** dan **overriding**. Penerapannya digunakan agar method dapat digunakan dengan cara yang berbeda sesuai dengan kebutuhan program.
+
+### a. Overloading
+
+Overloading diterapkan pada class `UMKM` melalui dua method `tampilkanInfo()` yang memiliki parameter berbeda.
+
+Contohnya:
+
+```java
+public void tampilkanInfo()
+```
+
+dan:
+
+```java
+public void tampilkanInfo(boolean detail)
+```
+
+Kedua method tersebut memiliki nama yang sama tetapi parameter yang berbeda.
+
+Method `tampilkanInfo()` digunakan untuk menampilkan data UMKM secara lengkap. Sedangkan `tampilkanInfo(boolean detail)` digunakan untuk menentukan tampilan data berdasarkan nilai `detail`.
+
+Pada menu **Tampilkan Data UMKM**, pengguna dapat memilih:
+
+1. Tampilkan Data Lengkap
+2. Tampilkan Data Singkat
+
+Jika pengguna memilih **Data Lengkap**, program menggunakan:
+
+```java
+InfoUMKM info = umkm;
+info.tampilkanInfo();
+```
+
+Sedangkan untuk **Data Singkat**, program menggunakan:
+
+```java
+umkm.tampilkanInfo(false);
+```
+
+Dengan demikian, overloading pada program tidak hanya dibuat sebagai tambahan method, tetapi benar-benar digunakan untuk memberikan pilihan tampilan data UMKM kepada pengguna.
+
+### b. Overriding
+
+Overriding diterapkan pada class `JenisKuliner` dan `JenisFashion`.
+
+Kedua class tersebut mengimplementasikan kembali method `getKategori()` yang berasal dari abstract class `JenisUsaha`.
+
+Pada `JenisKuliner`, method `getKategori()` menghasilkan kategori **Kuliner**:
+
+```java
+@Override
+public String getKategori() {
+    return "Kuliner";
+}
+```
+
+Sedangkan pada `JenisFashion`, method tersebut menghasilkan kategori **Fashion**:
+
+```java
+@Override
+public String getKategori() {
+    return "Fashion";
+}
+```
+
+Dengan overriding, masing-masing subclass dapat memberikan hasil yang sesuai dengan jenis usahanya.
+
+### Alasan Menggunakan Polymorphism
+
+Polymorphism digunakan karena program membutuhkan method yang dapat digunakan dengan bentuk yang berbeda. Overloading digunakan untuk memberikan pilihan tampilan data UMKM, sedangkan overriding digunakan agar setiap jenis usaha dapat menentukan kategori sesuai dengan class masing-masing.
+
+### Screenshot Polymorphism
+
+**Overloading pada `UMKM.java`:**
+
+![Overloading UMKM](dokumentasi/overloading-umkm.png)
+
+**Overriding pada `JenisKuliner.java`:**
+
+![Overriding Jenis Kuliner](dokumentasi/overriding-kuliner.png)
+
+**Overriding pada `JenisFashion.java`:**
+
+![Overriding Jenis Fashion](dokumentasi/overriding-fashion.png)
+
+**Hasil Data Lengkap:**
+
+![Data Lengkap](dokumentasi/data-lengkap.png)
+
+**Hasil Data Singkat:**
+
+![Data Singkat](dokumentasi/data-singkat.png)
+
+
+## 5. Abstraction
+
+Abstraction diterapkan dengan mengubah class `JenisUsaha` menjadi **abstract class**.
+
+`JenisUsaha` digunakan sebagai class umum untuk jenis usaha dan memiliki abstract method `getKategori()`.
+
+Contohnya:
+
+```java
+public abstract class JenisUsaha {
+
+    private String namaJenis;
+
+    public JenisUsaha(String namaJenis) {
+        this.namaJenis = namaJenis;
+    }
+
+    public String getNamaJenis() {
+        return namaJenis;
+    }
+
+    public void setNamaJenis(String namaJenis) {
+        this.namaJenis = namaJenis;
+    }
+
+    public abstract String getKategori();
+}
+```
+
+Abstract method `getKategori()` tidak memiliki isi pada class `JenisUsaha`. Method tersebut kemudian harus diimplementasikan oleh subclass seperti `JenisKuliner` dan `JenisFashion`.
+
+### Alasan Menggunakan Abstraction
+
+Abstraction digunakan agar `JenisUsaha` dapat menjadi dasar untuk berbagai jenis usaha tanpa menentukan kategori secara langsung pada class induk.
+
+Kategori usaha kemudian ditentukan oleh masing-masing subclass melalui method `getKategori()`. Dengan cara ini, `JenisKuliner` dapat menghasilkan kategori **Kuliner** dan `JenisFashion` dapat menghasilkan kategori **Fashion**.
+
+### Screenshot Abstraction
+
+**Abstract class `JenisUsaha.java`:**
+
+![Abstract Class Jenis Usaha](dokumentasi/abstract-jenis-usaha.png)
+
+**Subclass `JenisKuliner.java`:**
+
+![Jenis Kuliner](dokumentasi/jenis-kuliner.png)
+
+**Subclass `JenisFashion.java`:**
+
+![Jenis Fashion](dokumentasi/jenis-fashion.png)
+
+
+## 6. Input Validation
 
 Program menggunakan validasi input untuk memastikan data yang dimasukkan pengguna sesuai dengan kebutuhan program.
 
@@ -168,7 +327,8 @@ Oleh karena itu, validasi digunakan agar program dapat menangani input yang tida
 
 <img width="395" height="242" alt="image" src="https://github.com/user-attachments/assets/d2e96eb5-b476-4d59-b8b1-c334658c008b" />
 
-## 5. Dummy Data
+
+## 7. Dummy Data
 
 Program memiliki satu dummy data yang dimasukkan ketika program pertama kali dijalankan.
 
@@ -199,6 +359,79 @@ MVC digunakan untuk memisahkan bagian program berdasarkan tugasnya. Dalam progra
 Struktur MVC pada program:
 
 <img width="373" height="257" alt="image" src="https://github.com/user-attachments/assets/a5573c36-ae8e-4e6a-9d09-c99422555637" />
+
+## 8. Interface
+
+Interface diterapkan dengan membuat `InfoUMKM.java`.
+
+Interface `InfoUMKM` memiliki method `tampilkanInfo()` yang menjadi aturan bagi class yang menerapkannya.
+
+Contohnya:
+
+```java
+public interface InfoUMKM {
+
+    void tampilkanInfo();
+}
+```
+
+Class `UMKM` kemudian menerapkan interface tersebut menggunakan:
+
+```java
+public class UMKM implements InfoUMKM
+```
+
+Method `tampilkanInfo()` pada class `UMKM` menggunakan `@Override` karena method tersebut berasal dari interface `InfoUMKM`.
+
+Contohnya:
+
+```java
+@Override
+public void tampilkanInfo() {
+
+    System.out.println("ID UMKM      : " + idUMKM);
+    System.out.println("Nama Usaha   : " + namaUsaha);
+    System.out.println("Nama Pemilik : " + namaPemilik);
+    System.out.println("Jenis Usaha  : " + jenisUsaha.getNamaJenis());
+    System.out.println("Kategori     : " + jenisUsaha.getKategori());
+    System.out.println("Event        : " + event.getNamaEvent());
+    System.out.println("Lokasi       : " + event.getLokasi());
+}
+```
+
+Interface tersebut juga benar-benar digunakan pada saat program menampilkan data. Pada `UMKMView`, object `UMKM` digunakan melalui referensi bertipe `InfoUMKM`.
+
+Contohnya:
+
+```java
+InfoUMKM info = umkm;
+info.tampilkanInfo();
+```
+
+### Alasan Menggunakan Interface
+
+Interface digunakan untuk menentukan method yang harus dimiliki oleh class yang menerapkannya. Pada program ini, `InfoUMKM` digunakan agar class `UMKM` memiliki method `tampilkanInfo()` yang dapat digunakan untuk menampilkan informasi UMKM.
+
+Penerapan interface juga membuat penggunaan method lebih terstruktur karena `UMKMView` dapat memanggil method melalui tipe `InfoUMKM`.
+
+### Screenshot Interface
+
+**Interface `InfoUMKM.java`:**
+
+![Interface Info UMKM](dokumentasi/info-umkm.png)
+
+**Class `UMKM.java` menggunakan interface:**
+
+![UMKM Implements InfoUMKM](dokumentasi/umkm-interface.png)
+
+**Method `tampilkanInfo()` menggunakan `@Override`:**
+
+![Override Interface](dokumentasi/override-interface.png)
+
+**Penggunaan interface pada `UMKMView.java`:**
+
+![Penggunaan Interface](dokumentasi/penggunaan-interface.png)
+
 
 ## 1. Model
 
@@ -266,7 +499,7 @@ Contohnya ketika pengguna memilih menu tambah data, `UMKMView` menerima input da
 Dengan begitu, View hanya berfokus pada tampilan dan input, sedangkan Controller menangani proses pengelolaan data.
 
 
-## Alasan Menggunakan MVC Sebagai Nilai Tambah
+## Alasan Menggunakan MVC
 
 MVC dipilih sebagai nilai tambah karena program memiliki beberapa class dan fitur CRUD sehingga kode program mulai memiliki beberapa bagian yang berbeda.
 
@@ -295,6 +528,15 @@ MVC digunakan agar kode program lebih terstruktur, lebih mudah dibaca, dan lebih
 <img width="506" height="241" alt="image" src="https://github.com/user-attachments/assets/1e3b3cfe-c073-4ff7-8d46-aab6c83594d8" />
 
 ## 3. Tampilkan Data UMKM
+## 3. Tampilkan Data UMKM
+
+### Data Lengkap
+
+Screenshot hasil ketika pengguna memilih `1. Tampilkan Data Lengkap`.
+
+### Data Singkat
+
+Screenshot hasil ketika pengguna memilih `2. Tampilkan Data Singkat`.
 
 <img width="380" height="318" alt="image" src="https://github.com/user-attachments/assets/31f234bd-10fd-4486-a7cc-76dad99564b5" />
 
@@ -308,10 +550,9 @@ MVC digunakan agar kode program lebih terstruktur, lebih mudah dibaca, dan lebih
 
 <img width="423" height="132" alt="image" src="https://github.com/user-attachments/assets/992e2190-8bc2-4f31-b193-ebbfa89f74e1" />
 
+
 # Kesimpulan
 
-Pada Mini Project 2 ini, Sistem Pendataan UMKM dikembangkan dengan menerapkan beberapa konsep Pemrograman Berorientasi Objek, yaitu **access modifier, encapsulation, inheritance, input validation, dan dummy data**.
+Pada Mini Project 3 ini, Sistem Pendataan UMKM dikembangkan dari Mini Project 2 dengan mempertahankan konsep access modifier, encapsulation, inheritance, input validation, dummy data, dan MVC. Pada pengembangan kali ini ditambahkan konsep polymorphism, abstraction, dan interface. Polymorphism diterapkan melalui overloading pada method `tampilkanInfo()` dan overriding pada method `getKategori()`. Abstraction diterapkan melalui abstract class `JenisUsaha`, sedangkan interface diterapkan melalui `InfoUMKM` yang digunakan oleh class `UMKM`.
 
-Setiap konsep digunakan sesuai dengan kebutuhan program. Access modifier digunakan agar atribut tidak dapat diakses secara langsung dari class lain. Encapsulation digunakan agar akses dan perubahan data dilakukan melalui getter dan setter. Inheritance digunakan untuk membuat hubungan antara `JenisUsaha`, `JenisKuliner`, dan `JenisFashion`. Input validation digunakan untuk menangani kesalahan input pengguna, sedangkan dummy data digunakan agar program memiliki data awal ketika pertama kali dijalankan.
-
-Sebagai **nilai tambah**, program menerapkan **MVC (Model View Controller)**. MVC digunakan karena program memiliki beberapa class dan fitur CRUD sehingga kode perlu dipisahkan berdasarkan tugasnya. Dengan adanya Model, View, dan Controller, bagian data, tampilan, dan pengolahan data menjadi lebih teratur dan lebih mudah dikembangkan.
+Setiap konsep yang diterapkan memiliki fungsi dalam program. Overloading digunakan untuk menampilkan data UMKM secara lengkap atau singkat, overriding digunakan untuk menentukan kategori sesuai jenis usaha, abstraction digunakan sebagai dasar untuk jenis usaha, dan interface digunakan sebagai aturan method untuk menampilkan informasi UMKM. Dengan penerapan konsep tersebut, program tidak hanya dapat melakukan proses CRUD, tetapi juga memiliki struktur kode yang lebih sesuai dengan konsep Pemrograman Berorientasi Objek.
