@@ -394,7 +394,8 @@ Penerapan interface juga membuat penggunaan method lebih terstruktur karena `UMK
 
 **Interface `InfoUMKM.java`:**
 
-<img width="238" height="95" alt="image" src="https://github.com/user-attachments/assets/c8ddd37e-2b5f-4bc9-85a0-94ecbfed37ee" />
+<img width="233" height="149" alt="image" src="https://github.com/user-attachments/assets/0623e53c-976d-405b-ae40-a88cb6ba836c" />
+
 
 
 **Class `UMKM.java` menggunakan interface:**
@@ -419,7 +420,7 @@ Package `model` berisi class yang berhubungan dengan data dan konsep utama dalam
 
 Class yang terdapat dalam package `model` yaitu:
 
-<img width="194" height="65" alt="image" src="https://github.com/user-attachments/assets/b906aefe-1d71-4cad-95e0-4004a66580b2" />
+<img width="217" height="143" alt="image" src="https://github.com/user-attachments/assets/ef44305d-ee73-49e0-a34f-7d19d0a454fc" />
 
 
 Class yang terdapat dalam package `model` yaitu:
