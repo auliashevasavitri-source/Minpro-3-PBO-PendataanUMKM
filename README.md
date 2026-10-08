@@ -76,7 +76,7 @@ Package yang digunakan terdiri dari:
 - `view` digunakan untuk tampilan dan input pengguna.
 - `com.mycompany.pendataan_umkm` berisi class utama untuk menjalankan program.
   
-<img width="220" height="173" alt="image" src="https://github.com/user-attachments/assets/46f271c2-a145-4659-931d-3b3d9146c6c2" />
+<img width="647" height="348" alt="image" src="https://github.com/user-attachments/assets/c95206a5-0fe9-4f16-bd5b-806ad7797d2c" />
 
 
 # Penerapan Konsep PBO
