@@ -312,7 +312,7 @@ Program memiliki satu dummy data yang dimasukkan ketika program pertama kali dij
 
 Data yang digunakan:
 
-<img width="469" height="167" alt="image" src="https://github.com/user-attachments/assets/b98a1a97-9c3d-44dd-9698-f366cafface6" />
+<img width="669" height="367" alt="image" src="https://github.com/user-attachments/assets/b98a1a97-9c3d-44dd-9698-f366cafface6" />
 
 ### Alasan Menggunakan Dummy Data
 
@@ -326,7 +326,7 @@ Penggunaan dummy data juga memenuhi ketentuan Mini Project 2 yang meminta minima
 
 ### Screenshot Dummy Data
 
-<img width="378" height="201" alt="image" src="https://github.com/user-attachments/assets/5526bf08-5b5c-495a-9adc-441329cbaf2c" />
+<img width="678" height="501" alt="image" src="https://github.com/user-attachments/assets/5526bf08-5b5c-495a-9adc-441329cbaf2c" />
 
 ## MVC (Model View Controller)
 
@@ -334,7 +334,7 @@ MVC digunakan untuk memisahkan bagian program berdasarkan tugasnya. Dalam progra
 
 Struktur MVC pada program:
 
-<img width="373" height="257" alt="image" src="https://github.com/user-attachments/assets/a5573c36-ae8e-4e6a-9d09-c99422555637" />
+<img width="573" height="457" alt="image" src="https://github.com/user-attachments/assets/a5573c36-ae8e-4e6a-9d09-c99422555637" />
 
 ## 8. Interface
 
@@ -394,23 +394,23 @@ Penerapan interface juga membuat penggunaan method lebih terstruktur karena `UMK
 
 **Interface `InfoUMKM.java`:**
 
-<img width="233" height="149" alt="image" src="https://github.com/user-attachments/assets/0623e53c-976d-405b-ae40-a88cb6ba836c" />
+<img width="533" height="349" alt="image" src="https://github.com/user-attachments/assets/0623e53c-976d-405b-ae40-a88cb6ba836c" />
 
 
 
 **Class `UMKM.java` menggunakan interface:**
 
-<img width="317" height="122" alt="image" src="https://github.com/user-attachments/assets/537db5ea-25da-45d5-ba16-3501b5de6298" />
+<img width="517" height="322" alt="image" src="https://github.com/user-attachments/assets/537db5ea-25da-45d5-ba16-3501b5de6298" />
 
 
 **Method `tampilkanInfo()` menggunakan `@Override`:**
 
-<img width="337" height="98" alt="image" src="https://github.com/user-attachments/assets/ef16269b-b169-4beb-801e-e1703300c32a" />
+<img width="537" height="298" alt="image" src="https://github.com/user-attachments/assets/ef16269b-b169-4beb-801e-e1703300c32a" />
 
 
 **Penggunaan interface pada `UMKMView.java`:**
 
-<img width="320" height="197" alt="image" src="https://github.com/user-attachments/assets/9f4f5abc-5a0e-45f7-9277-31ec90cbb0b4" />
+<img width="420" height="297" alt="image" src="https://github.com/user-attachments/assets/9f4f5abc-5a0e-45f7-9277-31ec90cbb0b4" />
 
 
 
@@ -420,7 +420,7 @@ Package `model` berisi class yang berhubungan dengan data dan konsep utama dalam
 
 Class yang terdapat dalam package `model` yaitu:
 
-<img width="217" height="143" alt="image" src="https://github.com/user-attachments/assets/ef44305d-ee73-49e0-a34f-7d19d0a454fc" />
+<img width="517" height="443" alt="image" src="https://github.com/user-attachments/assets/ef44305d-ee73-49e0-a34f-7d19d0a454fc" />
 
 
 Class yang terdapat dalam package `model` yaitu:
