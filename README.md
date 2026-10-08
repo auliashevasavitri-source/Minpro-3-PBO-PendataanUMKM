@@ -198,13 +198,13 @@ Kedua class tersebut mengimplementasikan kembali method `getKategori()` yang ber
 Pada `JenisKuliner`, method `getKategori()` menghasilkan kategori **Kuliner**:
 
 
-<img width="244" height="131" alt="image" src="https://github.com/user-attachments/assets/2c47692b-4076-4527-acd7-d40f68ffc8ae" />
+<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/2c47692b-4076-4527-acd7-d40f68ffc8ae" />
 
 
 Sedangkan pada `JenisFashion`, method tersebut menghasilkan kategori **Fashion**:
 
 
-<img width="266" height="129" alt="image" src="https://github.com/user-attachments/assets/2c00b9a0-cf27-40a8-a539-063dd68b39ea" />
+<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/2c00b9a0-cf27-40a8-a539-063dd68b39ea" />
 
 
 Dengan overriding, masing-masing subclass dapat memberikan hasil yang sesuai dengan jenis usahanya.
@@ -217,12 +217,12 @@ Polymorphism digunakan karena program membutuhkan method yang dapat digunakan de
 
 **Overloading pada `UMKM.java`:**
 
-<img width="328" height="215" alt="image" src="https://github.com/user-attachments/assets/2673b3c3-7018-4cd2-aca4-3b6dcfe492a0" />
+<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/2673b3c3-7018-4cd2-aca4-3b6dcfe492a0" />
 
 
 **Overriding pada `JenisKuliner.java`:**
 
-<img width="248" height="73" alt="image" src="https://github.com/user-attachments/assets/668cb2fd-7a3e-49c9-9640-e5708346f968" />
+<img width="400" height="200" alt="image" src="https://github.com/user-attachments/assets/668cb2fd-7a3e-49c9-9640-e5708346f968" />
 
 
 **Overriding pada `JenisFashion.java`:**
