@@ -64,7 +64,7 @@ Selama program berjalan, validasi input digunakan untuk mencegah kesalahan seper
 
 ### Screenshot Alur Program
 
-<img width="547" height="227" alt="image" src="https://github.com/user-attachments/assets/a4155e0a-f7d4-4d3f-993f-aaf6cac54e1f" />
+<img width="138" height="173" alt="image" src="https://github.com/user-attachments/assets/6b889484-6937-401a-b0e9-52dbf954076f" />
 
 
 # Struktur Project
