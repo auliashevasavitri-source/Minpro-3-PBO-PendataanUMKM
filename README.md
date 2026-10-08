@@ -62,9 +62,8 @@ Cara kerja setiap menu dalam program adalah sebagai berikut:
 
 Selama program berjalan, validasi input digunakan untuk mencegah kesalahan seperti memasukkan huruf pada input angka, memasukkan angka kurang dari atau sama dengan 0, atau membiarkan input teks kosong. Selain itu, program menggunakan polymorphism untuk menampilkan data UMKM dengan bentuk yang berbeda melalui overloading. Polymorphism juga digunakan melalui overriding untuk menentukan kategori pada masing-masing jenis usaha.
 
-### Screenshot Alur Program
+<img width="311" height="110" alt="image" src="https://github.com/user-attachments/assets/5bc4f6e4-a68d-4399-985f-af1e0aa88590" />
 
-<img width="326" height="140" alt="image" src="https://github.com/user-attachments/assets/03862ba2-abe3-4002-a72b-742d01ef6ee2" />
 
 
 
