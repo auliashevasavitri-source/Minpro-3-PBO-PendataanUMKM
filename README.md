@@ -227,7 +227,7 @@ Polymorphism digunakan karena program membutuhkan method yang dapat digunakan de
 
 **Overriding pada `JenisFashion.java`:**
 
-<img width="627" height="371" alt="image" src="https://github.com/user-attachments/assets/e491b557-d753-4c4e-89b9-545b40332306" />
+<img width="427" height="271" alt="image" src="https://github.com/user-attachments/assets/e491b557-d753-4c4e-89b9-545b40332306" />
 
 
 **Hasil Data Lengkap:**
