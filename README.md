@@ -64,7 +64,8 @@ Selama program berjalan, validasi input digunakan untuk mencegah kesalahan seper
 
 ### Screenshot Alur Program
 
-<img width="138" height="173" alt="image" src="https://github.com/user-attachments/assets/6b889484-6937-401a-b0e9-52dbf954076f" />
+<img width="326" height="140" alt="image" src="https://github.com/user-attachments/assets/03862ba2-abe3-4002-a72b-742d01ef6ee2" />
+
 
 
 # Struktur Project
@@ -161,15 +162,8 @@ Overloading diterapkan pada class `UMKM` melalui dua method `tampilkanInfo()` ya
 
 Contohnya:
 
-```java
-public void tampilkanInfo()
-```
+<img width="367" height="225" alt="image" src="https://github.com/user-attachments/assets/51a4a9af-bec2-4aa3-bd77-5e00e54916ea" />
 
-dan:
-
-```java
-public void tampilkanInfo(boolean detail)
-```
 
 Kedua method tersebut memiliki nama yang sama tetapi parameter yang berbeda.
 
@@ -203,21 +197,15 @@ Kedua class tersebut mengimplementasikan kembali method `getKategori()` yang ber
 
 Pada `JenisKuliner`, method `getKategori()` menghasilkan kategori **Kuliner**:
 
-```java
-@Override
-public String getKategori() {
-    return "Kuliner";
-}
-```
+
+<img width="244" height="131" alt="image" src="https://github.com/user-attachments/assets/2c47692b-4076-4527-acd7-d40f68ffc8ae" />
+
 
 Sedangkan pada `JenisFashion`, method tersebut menghasilkan kategori **Fashion**:
 
-```java
-@Override
-public String getKategori() {
-    return "Fashion";
-}
-```
+
+<img width="266" height="129" alt="image" src="https://github.com/user-attachments/assets/2c00b9a0-cf27-40a8-a539-063dd68b39ea" />
+
 
 Dengan overriding, masing-masing subclass dapat memberikan hasil yang sesuai dengan jenis usahanya.
 
