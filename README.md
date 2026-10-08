@@ -162,7 +162,7 @@ Overloading diterapkan pada class `UMKM` melalui dua method `tampilkanInfo()` ya
 
 Contohnya:
 
-<img width="367" height="225" alt="image" src="https://github.com/user-attachments/assets/51a4a9af-bec2-4aa3-bd77-5e00e54916ea" />
+<img width="600" height="500" alt="image" src="https://github.com/user-attachments/assets/51a4a9af-bec2-4aa3-bd77-5e00e54916ea" />
 
 
 Kedua method tersebut memiliki nama yang sama tetapi parameter yang berbeda.
