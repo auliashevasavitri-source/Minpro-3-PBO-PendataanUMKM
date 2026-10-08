@@ -227,17 +227,17 @@ Polymorphism digunakan karena program membutuhkan method yang dapat digunakan de
 
 **Overriding pada `JenisFashion.java`:**
 
-<img width="227" height="71" alt="image" src="https://github.com/user-attachments/assets/e491b557-d753-4c4e-89b9-545b40332306" />
+<img width="627" height="371" alt="image" src="https://github.com/user-attachments/assets/e491b557-d753-4c4e-89b9-545b40332306" />
 
 
 **Hasil Data Lengkap:**
 
-<img width="214" height="260" alt="image" src="https://github.com/user-attachments/assets/b484ece9-8ef0-4250-851d-b3e87e8c50ca" />
+<img width="614" height="660" alt="image" src="https://github.com/user-attachments/assets/b484ece9-8ef0-4250-851d-b3e87e8c50ca" />
 
 
 **Hasil Data Singkat:**
 
-<img width="214" height="259" alt="image" src="https://github.com/user-attachments/assets/e5cb66e9-3c73-4a7d-abd7-5c0d07f7feff" />
+<img width="614" height="659" alt="image" src="https://github.com/user-attachments/assets/e5cb66e9-3c73-4a7d-abd7-5c0d07f7feff" />
 
 
 
@@ -249,7 +249,7 @@ Abstraction diterapkan dengan mengubah class `JenisUsaha` menjadi **abstract cla
 
 Contohnya:
 
-<img width="266" height="181" alt="image" src="https://github.com/user-attachments/assets/adf49cb5-f971-4e64-bb6f-f61e6e8941ec" />
+<img width="566" height="481" alt="image" src="https://github.com/user-attachments/assets/adf49cb5-f971-4e64-bb6f-f61e6e8941ec" />
 
 
 Abstract method `getKategori()` tidak memiliki isi pada class `JenisUsaha`. Method tersebut kemudian harus diimplementasikan oleh subclass seperti `JenisKuliner` dan `JenisFashion`.
@@ -264,17 +264,17 @@ Kategori usaha kemudian ditentukan oleh masing-masing subclass melalui method `g
 
 **Abstract class `JenisUsaha.java`:**
 
-<img width="266" height="181" alt="image" src="https://github.com/user-attachments/assets/ef1d1eaf-a8f5-475f-8d5f-a04210f8e1f5" />
+<img width="666" height="581" alt="image" src="https://github.com/user-attachments/assets/ef1d1eaf-a8f5-475f-8d5f-a04210f8e1f5" />
 
 
 **Subclass `JenisKuliner.java`:**
 
-<img width="286" height="139" alt="image" src="https://github.com/user-attachments/assets/949cc4a9-4174-4ad6-af7a-2ef08aabdb6b" />
+<img width="686" height="539" alt="image" src="https://github.com/user-attachments/assets/949cc4a9-4174-4ad6-af7a-2ef08aabdb6b" />
 
 
 **Subclass `JenisFashion.java`:**
 
-<img width="275" height="136" alt="image" src="https://github.com/user-attachments/assets/4b7a9b82-c3dd-4226-b069-1996e7240ae1" />
+<img width="675" height="536" alt="image" src="https://github.com/user-attachments/assets/4b7a9b82-c3dd-4226-b069-1996e7240ae1" />
 
 
 ## 6. Input Validation
