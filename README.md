@@ -204,7 +204,7 @@ Pada `JenisKuliner`, method `getKategori()` menghasilkan kategori **Kuliner**:
 Sedangkan pada `JenisFashion`, method tersebut menghasilkan kategori **Fashion**:
 
 
-<img width="500" height="400" alt="image" src="https://github.com/user-attachments/assets/2c00b9a0-cf27-40a8-a539-063dd68b39ea" />
+<img width="400" height="270" alt="image" src="https://github.com/user-attachments/assets/2c00b9a0-cf27-40a8-a539-063dd68b39ea" />
 
 
 Dengan overriding, masing-masing subclass dapat memberikan hasil yang sesuai dengan jenis usahanya.
