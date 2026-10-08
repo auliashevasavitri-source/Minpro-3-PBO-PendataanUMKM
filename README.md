@@ -89,6 +89,7 @@ Pada program ini, atribut dalam class dibuat menggunakan access modifier `privat
 Contohnya pada class `UMKM`:
 
 <img width="438" height="119" alt="image" src="https://github.com/user-attachments/assets/12a341e8-dcd8-4c3e-ac74-b4006e7905c0" />
+
 ### Alasan Menggunakan Access Modifier
 
 `private` digunakan agar atribut pada object UMKM tidak dapat diakses dan diubah secara langsung dari class lain.
@@ -217,23 +218,28 @@ Polymorphism digunakan karena program membutuhkan method yang dapat digunakan de
 
 **Overloading pada `UMKM.java`:**
 
-![Overloading UMKM](dokumentasi/overloading-umkm.png)
+<img width="328" height="215" alt="image" src="https://github.com/user-attachments/assets/2673b3c3-7018-4cd2-aca4-3b6dcfe492a0" />
+
 
 **Overriding pada `JenisKuliner.java`:**
 
-![Overriding Jenis Kuliner](dokumentasi/overriding-kuliner.png)
+<img width="248" height="73" alt="image" src="https://github.com/user-attachments/assets/668cb2fd-7a3e-49c9-9640-e5708346f968" />
+
 
 **Overriding pada `JenisFashion.java`:**
 
-![Overriding Jenis Fashion](dokumentasi/overriding-fashion.png)
+<img width="227" height="71" alt="image" src="https://github.com/user-attachments/assets/e491b557-d753-4c4e-89b9-545b40332306" />
+
 
 **Hasil Data Lengkap:**
 
-![Data Lengkap](dokumentasi/data-lengkap.png)
+<img width="214" height="260" alt="image" src="https://github.com/user-attachments/assets/b484ece9-8ef0-4250-851d-b3e87e8c50ca" />
+
 
 **Hasil Data Singkat:**
 
-![Data Singkat](dokumentasi/data-singkat.png)
+<img width="214" height="259" alt="image" src="https://github.com/user-attachments/assets/e5cb66e9-3c73-4a7d-abd7-5c0d07f7feff" />
+
 
 
 ## 5. Abstraction
@@ -244,26 +250,8 @@ Abstraction diterapkan dengan mengubah class `JenisUsaha` menjadi **abstract cla
 
 Contohnya:
 
-```java
-public abstract class JenisUsaha {
+<img width="266" height="181" alt="image" src="https://github.com/user-attachments/assets/adf49cb5-f971-4e64-bb6f-f61e6e8941ec" />
 
-    private String namaJenis;
-
-    public JenisUsaha(String namaJenis) {
-        this.namaJenis = namaJenis;
-    }
-
-    public String getNamaJenis() {
-        return namaJenis;
-    }
-
-    public void setNamaJenis(String namaJenis) {
-        this.namaJenis = namaJenis;
-    }
-
-    public abstract String getKategori();
-}
-```
 
 Abstract method `getKategori()` tidak memiliki isi pada class `JenisUsaha`. Method tersebut kemudian harus diimplementasikan oleh subclass seperti `JenisKuliner` dan `JenisFashion`.
 
@@ -277,15 +265,17 @@ Kategori usaha kemudian ditentukan oleh masing-masing subclass melalui method `g
 
 **Abstract class `JenisUsaha.java`:**
 
-![Abstract Class Jenis Usaha](dokumentasi/abstract-jenis-usaha.png)
+<img width="266" height="181" alt="image" src="https://github.com/user-attachments/assets/ef1d1eaf-a8f5-475f-8d5f-a04210f8e1f5" />
+
 
 **Subclass `JenisKuliner.java`:**
 
-![Jenis Kuliner](dokumentasi/jenis-kuliner.png)
+<img width="286" height="139" alt="image" src="https://github.com/user-attachments/assets/949cc4a9-4174-4ad6-af7a-2ef08aabdb6b" />
+
 
 **Subclass `JenisFashion.java`:**
 
-![Jenis Fashion](dokumentasi/jenis-fashion.png)
+<img width="275" height="136" alt="image" src="https://github.com/user-attachments/assets/4b7a9b82-c3dd-4226-b069-1996e7240ae1" />
 
 
 ## 6. Input Validation
@@ -340,8 +330,6 @@ Penggunaan dummy data juga memenuhi ketentuan Mini Project 2 yang meminta minima
 <img width="378" height="201" alt="image" src="https://github.com/user-attachments/assets/5526bf08-5b5c-495a-9adc-441329cbaf2c" />
 
 ## MVC (Model View Controller)
-
-Sebagai nilai tambah, program menerapkan konsep **MVC (Model View Controller)**.
 
 MVC digunakan untuk memisahkan bagian program berdasarkan tugasnya. Dalam program ini, bagian data, tampilan, dan proses pengolahan data ditempatkan pada package yang berbeda.
 
