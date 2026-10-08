@@ -523,7 +523,7 @@ MVC digunakan agar kode program lebih terstruktur, lebih mudah dibaca, dan lebih
 
 ### Data Lengkap
 
-<img width="380" height="318" alt="image" src="https://github.com/user-attachments/assets/31f234bd-10fd-4486-a7cc-76dad99564b5" />
+<img width="699" height="656" alt="image" src="https://github.com/user-attachments/assets/47afd122-d8c7-413e-97d1-32029222cabe" />
 
 ### Data Singkat
 
