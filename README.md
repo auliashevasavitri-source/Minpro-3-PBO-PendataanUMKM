@@ -167,15 +167,21 @@ Pengujian yang dilakukan meliputi:
 
 ### Dokumentasi Pengujian
 
-Tambahkan screenshot hasil program pada bagian berikut.
 
 **1. Struktur Project**
 
-Tampilkan struktur package pada NetBeans.
+<img width="254" height="227" alt="image" src="https://github.com/user-attachments/assets/54394cf1-f3e8-4cef-ac9b-5446e8dea403" />
+
+
+
 
 **2. Koneksi Database**
 
-Tampilkan kode `DatabaseConnection.java` dan hasil koneksi yang berhasil.
+<img width="394" height="260" alt="image" src="https://github.com/user-attachments/assets/3f72d608-dd27-4d8e-9d9e-5c81b492ee31" />
+
+<img width="393" height="250" alt="image" src="https://github.com/user-attachments/assets/8d86103f-bec4-456a-9022-c0efa8cb0526" />
+
+<img width="449" height="239" alt="image" src="https://github.com/user-attachments/assets/91a5d013-b3a1-4053-9196-a6783b694c9a" />
 
 **3. Database MySQL**
 
